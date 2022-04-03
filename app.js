@@ -3,5 +3,8 @@ document.getElementById("btn").addEventListener("click", function() {
     .then(response => response.json())
     .then(data => {
         document.getElementById("activity").textContent = data.activity
+        document.getElementById("title").textContent = "🤖 Activity Bot 🤖 "
+        document.body.classList.add("fun")
+
     })  
 })
